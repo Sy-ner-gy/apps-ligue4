@@ -32,3 +32,18 @@ body {
 .rowfooter {
 	height: 45.1128vh;
 }
+
+.rowplayer {
+	height:15.68vh;
+	object-fit: cover;
+}
+
+.rowpontos {
+	height:6.3158vh;
+	object-fit: cover;
+}
+
+.rowbotao {
+	height:7.218vh;
+	object-fit: cover;
+}
