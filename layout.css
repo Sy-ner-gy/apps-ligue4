@@ -1,0 +1,20 @@
+.red1 {
+	background: #f00;
+}
+
+.blue1 {
+	background: #00f;
+}
+
+.pink1 {
+	background: #f0f;
+}
+
+body {
+	background-color: #000;
+}
+
+
+.navbar {
+	height:169px;
+}
