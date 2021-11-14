@@ -28,16 +28,14 @@
 	"devDependencies": {
 		"autoprefixer": "^10.3.1",
 		"postcss": "^8.3.5",
+		"purgecss": "^4.0.3",
+		"postcss-cli": "^8.3.1",
 		"sass": "^1.35.2"
 	},
 	"dependencies": {
 
 	},
 	"scripts": {
-		"fix-code": "prettier-eslint --write '.{js,jsx}' ",
-		"fix-styles": "prettier-stylelint --write '.{css,scss}' ",
-		"fix-html1": "prettier-eslint --write '.{html, mhtml}'",
-		"fix-html2": "prettier-stylelint --write '.{html, mhtml}'",
 		"css-main": "sass main.scss:main.css && postcss main.css --replace --use autoprefixer"
 	}
 }
