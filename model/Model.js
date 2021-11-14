@@ -1,29 +1,29 @@
 class Model{
-    constructor(){
-        
-        
-    } 
-        //Gerenciador
-        
-        
-        
-        //Criador
-        
-        
-        
-        //Alterador
-        
-        
-        
-        //Apagador
-        
-        
-        
-        //Conversor
-        
-        
-        
-        //Selecionador
-        
-    
+	constructor(){
+
+
+	}
+		//Gerenciador
+
+
+
+		//Criador
+
+
+
+		//Alterador
+
+
+
+		//Apagador
+
+
+
+		//Conversor
+
+
+
+		//Selecionador
+
+
 }

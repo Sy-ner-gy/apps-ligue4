@@ -1,17 +1,17 @@
 class Controller{
-    constructor(){
-        
-        
-        
-    } 
-        //Game Rules
-        
-        
-        
-        //Gerador
-        
-        
-        
-        //Manipulador
-    
+	constructor(){
+
+
+
+	}
+		//Game Rules
+
+
+
+		//Gerador
+
+
+
+		//Manipulador
+
 }
