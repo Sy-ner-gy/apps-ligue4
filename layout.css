@@ -14,7 +14,21 @@ body {
 	background-color: #000;
 }
 
+.rowheader {
+	height:24.875vh;
+}
 
-.navbar {
-	height:169px;
+.rowlogo {
+	height:21.125vh;
+	padding-left: 2vw;
+	padding-top: 1.875vh;
+	object-fit: cover;
+}
+
+.rowmain {
+	height:78.125vh;
+}
+
+.rowfooter {
+	height: 37.5vh;
 }
