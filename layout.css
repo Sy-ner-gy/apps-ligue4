@@ -15,20 +15,20 @@ body {
 }
 
 .rowheader {
-	height:24.875vh;
+	height:30.0752vh;
 }
 
 .rowlogo {
-	height:21.125vh;
-	padding-left: 2vw;
-	padding-top: 1.875vh;
+	height:25.4135vh;
+	padding-left: 1.20vw;
+	padding-top: 2.33085vh;
 	object-fit: cover;
 }
 
 .rowmain {
-	height:78.125vh;
+	height:98vh;
 }
 
 .rowfooter {
-	height: 37.5vh;
+	height: 45.1128vh;
 }
