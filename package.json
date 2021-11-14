@@ -1,0 +1,54 @@
+{
+  "name": "ligue4",
+  "version": "0.2.0",
+  "description": "Simple game of the classic Ligue4",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sy-ner-gy/apps-ligue4.git"
+  },
+  "keywords": [
+    "game",
+    "ligue4",
+    "bootstrap5",
+    "mvc",
+    "synergy"
+  ],
+  "author": "Synergy",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/Sy-ner-gy/apps-ligue4/issues"
+  },
+  "homepage": "https://github.com/Sy-ner-gy/apps-ligue4#readme",
+
+  "devDependencies": {
+    "eslint": "^7.29.0",
+  	"eslint-config-airbnb-base": "^14.2.1",
+  	"eslint-config-prettier": "^8.3.0",
+  	"eslint-plugin-html": "^6.1.2",
+  	"eslint-plugin-import": "^2.23.4",
+  	"eslint-plugin-prettier": "^3.4.0",
+  	"prettier": "^2.3.1",
+  	"prettier-eslint": "^12.0.0",
+  	"prettier-eslint-cli": "^5.0.1",
+  	"prettier-plugin-properties": "^0.1.0",
+  	"prettier-stylelint": "^0.4.2",
+  	"autoprefixer": "^10.3.1",
+  	"postcss": "^8.3.5",
+  	"sass": "^1.35.2"
+},
+"dependencies": {
+
+},
+"scripts": {
+  	"fix-code": "prettier-eslint --write '.{js,jsx}' ",
+  	"fix-styles": "prettier-stylelint --write '.{css,scss}' ",
+  	"fix-html1": "prettier-eslint --write '.{html, mhtml}'",
+  	"fix-html2": "prettier-stylelint --write '.{html, mhtml}'",
+  	"css-main": "sass main.scss:main.css && postcss main.css --replace --use autoprefixer"
+}
+}
