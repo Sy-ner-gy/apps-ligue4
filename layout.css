@@ -60,3 +60,11 @@ body {
 .row_lista_rodadas {
 	height:75vh;
 }
+
+.rowlogo2 {
+	height:21.1024vh;
+	padding-left: 1.20vw;
+	padding-top: 1.165425vh;
+	padding-bottom:1.165425vh;
+	object-fit: cover;
+}
