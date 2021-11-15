@@ -72,3 +72,16 @@ body {
 .rowbotao2 {
 	width: 100%;
 }
+
+.row_modo_player {
+	height: 57.4194vh;
+}
+
+.row_modo_numero {
+	height: 16.1290vh;
+}
+
+.row_modo_texto {
+	height: 12.7419vh;
+}
+
