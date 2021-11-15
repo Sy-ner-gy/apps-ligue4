@@ -20,10 +20,23 @@ function btnCarregarjogo() {
 
 }
 
+function toogle(el){
+	let value=""
+	if(el.dataset.info=="Novo jogo"){
+		value =el.dataset.info="Carregar jogo"
+	}else{
+		value =el.dataset.info="Novo jogo"
+	}
+	return value
+}
 
 $(document).ready(
 	function(){
 		
 		btnNovoJogo()
+		$S("#escolhe").onS("click",function(){
+			this.value= toogle(this)
+			console.log("!")
+		})
 	}
 )
