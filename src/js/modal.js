@@ -19,7 +19,17 @@ function btnCarregarjogo() {
 	})
 
 }
-
+function open(params) {
+	$('#preambulo_modos').modal('hide');
+	switch (params) {
+		case "Novo jogo":
+			$('#preambulo_2b').modal('show');
+			break;
+	
+		default:
+			break;
+	}
+}
 function toogle(el){
 	let value=""
 	if(el.dataset.info=="Novo jogo"){
@@ -35,8 +45,9 @@ $(document).ready(
 		
 		btnNovoJogo()
 		$S("#escolhe").onS("click",function(){
-			this.value= toogle(this)
 			console.log("!")
+			open(this.value)
+			this.value= toogle(this)
 		})
 	}
 )
