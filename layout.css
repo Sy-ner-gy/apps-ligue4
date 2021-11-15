@@ -47,3 +47,16 @@ body {
 	height:7.218vh;
 	object-fit: cover;
 }
+
+.row_numero_rodadas {
+	height:8.64vh;
+	object-fit: cover;
+}
+
+.rowrodadas {
+	height:6vh;
+}
+
+.row_lista_rodadas {
+	height:75vh;
+}
