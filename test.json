@@ -1,0 +1,44 @@
+{
+	"partidas": {
+
+		"Partida de Teste 1": {
+
+			"Sandra": {
+				"vitorias": 6,
+				"derrotas": 7,
+				"pontos": 30,
+				"imagem": "caminhoficticio/player1.jpg"
+				},
+
+			"Wister": {
+				"vitorias": 7,
+				"derrotas": 6,
+				"pontos": 35,
+				"imagem": "caminhoficticio/player2.jpg"
+				},
+
+			"numero": 1
+
+		},
+
+		"Partida de Teste 2": {
+
+			"Sandra": {
+				"vitorias": 7,
+				"derrotas": 6,
+				"pontos": 35,
+				"imagem": "caminhoficticio/player1.jpg"
+				},
+
+			"Wister": {
+				"vitorias": 6,
+				"derrotas": 7,
+				"pontos": 30,
+				"imagem": "caminhoficticio/player2.jpg"
+				},
+
+			"numero": 2
+
+		}
+	}
+}
