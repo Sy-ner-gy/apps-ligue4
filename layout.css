@@ -15,11 +15,11 @@ body {
 }
 
 .rowheader {
-	height:30.0752vh;
+	height:32.09677vh;
 }
 
 .rowlogo {
-	height:25.4135vh;
+	height:27.2581vh;
 	padding-left: 1.20vw;
 	padding-top: 2.33085vh;
 	object-fit: cover;
@@ -30,41 +30,42 @@ body {
 }
 
 .rowfooter {
-	height: 45.1128vh;
+	height: 48.3871vh;
 }
 
 .rowplayer {
-	height:15.68vh;
+	height:15.8065vh;
 	object-fit: cover;
 }
 
 .rowpontos {
-	height:6.3158vh;
+	height:6.7742vh;
 	object-fit: cover;
 }
 
 .rowbotao {
-	height:7.218vh;
+	height:7.7419vh;
 	object-fit: cover;
 }
 
 .row_numero_rodadas {
-	height:8.64vh;
+	height:8.3871vh;
 	object-fit: cover;
 }
 
 .rowrodadas {
-	height:6vh;
+	height:5.7419vh;
 }
 
 .row_lista_rodadas {
-	height:75vh;
+	height:76.7742vh;
 }
 
 .rowlogo2 {
-	height:21.1024vh;
+	height:21.6129vh;
 	padding-left: 1.20vw;
 	padding-top: 1.165425vh;
 	padding-bottom:1.165425vh;
 	object-fit: cover;
 }
+
