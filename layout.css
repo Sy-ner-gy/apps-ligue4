@@ -1,0 +1,136 @@
+.red1 {
+	background: #f00;
+}
+
+.blue1 {
+	background: #00f;
+}
+
+.pink1 {
+	background: #f0f;
+}
+
+body {
+	background-color: #000;
+}
+
+.rowheader {
+	height:32.09677vh;
+}
+
+.rowlogo {
+	height:27.2581vh;
+}
+
+.rowmain {
+	height:98vh;
+}
+
+.rowfooter {
+	height: 48.3871vh;
+}
+
+.rowplayer {
+	height:15.8065vh;
+	object-fit: cover;
+}
+
+.rowpontos {
+	height:6.7742vh;
+	object-fit: cover;
+}
+
+.rowbotao {
+	height:7.7419vh;
+	object-fit: cover;
+}
+
+.row_numero_rodadas {
+	height:8.3871vh;
+	object-fit: cover;
+}
+
+.rowrodadas {
+	height:5.7419vh;
+}
+
+.row_lista_rodadas {
+	height:76.7742vh;
+}
+
+.rowlogo2 {
+	height:21.6129vh;
+	padding-left: 1.20vw;
+	padding-top: 1.165425vh;
+	padding-bottom:1.165425vh;
+	object-fit: cover;
+}
+
+.rowbotao2 {
+	width: 100%;
+}
+
+.row_modo_player {
+	height: 57.4194vh;
+}
+
+.row_modo_numero {
+	height: 16.1290vh;
+}
+
+.row_modo_texto {
+	height: 12.7419vh;
+}
+
+.row_players {
+	height: 65.1613vh;
+}
+
+.row_player_nomepartida {
+	height: 25.8065vh;
+
+}
+
+.modal-body {
+	background-color: #000;
+
+}
+
+.row_pvi_quadro {
+	height: 65.1613vh;
+
+}
+
+.row_pvi_perfil {
+	height: 25.8065vh;
+
+}
+
+.row_pvi_texto {
+	height: 7.0968vh;
+
+}
+
+.row_pvi_entrada {
+	height: 10.8065vh;
+
+}
+
+.row_pvi_sony {
+	height: 35.9677vh;
+
+}
+
+.row_pvi_nomepartida {
+	height: 9.3548vh;
+
+}
+
+.row_pvi_botao {
+	height: 9.6774vh;
+
+}
+
+.layout_pontos {
+	margin-top: 2.25rem;
+}
