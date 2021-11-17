@@ -85,3 +85,16 @@ body {
 	height: 12.7419vh;
 }
 
+.row_players {
+	height: 65.1613vh;
+}
+
+.row_player_nomepartida {
+	height: 25.8065vh;
+
+}
+
+.modal-body {
+	background-color: #000;
+
+}
