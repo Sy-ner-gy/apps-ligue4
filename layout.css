@@ -98,3 +98,38 @@ body {
 	background-color: #000;
 
 }
+
+.row_pvi_quadro {
+	height: 65.1613vh;
+
+}
+
+.row_pvi_perfil {
+	height: 25.8065vh;
+
+}
+
+.row_pvi_texto {
+	height: 7.0968vh;
+
+}
+
+.row_pvi_entrada {
+	height: 10.8065vh;
+
+}
+
+.row_pvi_sony {
+	height: 35.9677vh;
+
+}
+
+.row_pvi_nomepartida {
+	height: 9.3548vh;
+
+}
+
+.row_pvi_botao {
+	height: 9.6774vh;
+
+}
