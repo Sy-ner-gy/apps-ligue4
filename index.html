@@ -4,7 +4,7 @@
 
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, target-densityDpi=device-dpi">
+	<meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
 	<meta name="author" content="Synergy">
 	<meta name="description" content="Jogo de Tabuleiro, muito divertido">
 	<meta name="keywords" content="jogo, game, tabuleiro, ligue4, 2 players, 1 player">
@@ -12,187 +12,934 @@
 	<meta name="theme-color" content="#ff0000">
 	<meta name="HandheldFriendly" content="True">
 	<meta name="MobileOptimized" content="0">
-	<link rel="icon" type="image/png" href="ligue4.png"
-	<link rel="stylesheet" type="text/css" href="src/css/layout.css">
+	<link rel="icon" type="image/png" href="ligue4.png">
+	<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="node_modules/select2/dist/css/select2.min.css">
+	<link href="layout.css" rel="stylesheet" type="text/css">
 	<title>Ligue-4</title>
 
 </head>
 <body>
 
-	<header class="header-box">
-		<picture class="img-menu-box" id="img-menu-equip">
-			<img src="src/img/layout.png">
-		</picture>
-		<div id="logo-game-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-		<div id="logo-equip-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-		<div id="barra-menu-box">
-			<nav>
-				<div id="menu-perfil-box">
+	<!-- Gameplay -->
+
+	<div class="conteiner overflow-hidden">
+
+		<header id="header">
+
+			<div class="row justify-content-between">
+
+				<div class="col-2">
+					<div class="red1 rowheader">
+						<img src="src/img/logo_layout.png" class="rowlogo">
+					</div>
 				</div>
-				<div id="menu-menu-box">
+
+				<div class="col">
+					<div class="blue1">
+
+						<div class="row justify-content-evenly align-items-end rowheader">
+
+							<div class="col-2">
+								<div class="red1">
+									<button>Perfil</button>
+								</div>
+							</div>
+
+							<div class="col-2">
+								<div class="red1">
+									<button>Menu</button>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
 				</div>
-				<div id="menu-salvar-box">
+
+				<div class="col-2">
+					<div class="red1 rowheader">
+						<img src="src/img/logo_layout.png" class="rowlogo">
+					</div>
 				</div>
-			</nav>
-		</div>
-		<picture class="img-menu-box" id="img-menu-history">
-			<img src="src/img/layout.png">
-		</picture>
-	</header>
 
-	<main class="area-game-box">
-		<div id="game-image-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-		<div id="game-table-box">
-			<table>
-				<tr>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</tr>
-				<tr>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</tr>
-				<tr>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</tr>
-				<tr>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</tr>
-				<tr>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</tr>
-				<tr>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-					<td>
-				</tr>
-			</table>
-		</div>
-	</main>
+			</div>
 
-	<section class="area-player-box" id="area-player1-box">
-		<div id="image-player1-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-		<div class="field-game-box" id="field-player1-pts-box">
-		</div>
-		<div class="campo-game-box" id="player1-pts-box">
-		</div>
-		<div class="field-game-box" id="field-player1-vit-box">
-		</div>
-		<div class="campo-game-box" id="player1-vit-box">
-		</div>
-		<div class="field-game-box" id="field-player1-der-box">
-		</div>
-		<div class="campo-game-box" id="player1-der-box">
-		</div>
-		<div class="time-icon-green-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-	</section>
+		</header> <br/>
 
-	<section class="area-player-box" id="area-player2-box">
-		<div id="image-player2-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-		<div class="field-game-box" id="field-player2-pts-box">
-		</div>
-		<div class="campo-game-box" id="player2-pts-box">
-		</div>
-		<div class="field-game-box" id="field-player2-vit-box">
-		</div>
-		<div class="campo-game-box" id="player2-vit-box">
-		</div>
-		<div class="field-game-box" id="field-player2-der-box">
-		</div>
-		<div class="campo-game-box" id="player2-der-box">
-		</div>
-		<div class="time-icon-red-box">
-			<picture>
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-		</div>
-	</section>
+		<main id="main">
 
-	<footer class="rodape-box">
-		<picture class="rodape-logo">
-				<source srcset="src/img/layout600.png" media="(max-width:600px)">
-				<source srcset="src/img/layout900.png" media="(min-width:900px)">
-				<source srcset="src/img/layout1200.png" media="(min-width:1200px)">
-				<img src="src/img/layout.png">
-			</picture>
-	</footer>
+			<div class="row">
+
+				<!-- Área de Player 1 -->
+
+				<div class="col-3">
+					<div class="red1 rowmain">
+
+						<div class="row justify-content-between">
+
+							<div class="col-7 offset-2 mt-4">
+								<div class="blue1">
+									<p>Jogador 1
+									</p>
+								</div>
+							</div>
+
+							<div class="w-100">
+							</div>
+
+							<div class="col-5 offset-3 mt-5">
+								<div class="blue1">
+									<img src="src/img/player_layout.png" class="rowplayer">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-4 mt-5">
+								<div class="blue1">
+									<p>Pontos
+									</p>
+								</div>
+							</div>
+
+							<div class="col-3 mt-5">
+								<div class="pink1">
+									<img src="src/img/pontos_layout.png" class="rowpontos">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-4 mt-2">
+								<div class="blue1">
+									<p>Vitórias
+									</p>
+								</div>
+							</div>
+
+							<div class="col-3 mt-2">
+								<div class="blue1">
+									<img src="src/img/pontos_layout.png" class="rowpontos">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-4 mt-3">
+								<div class="blue1">
+									<p>Derrotas
+									</p>
+								</div>
+							</div>
+
+							<div class="col-3 mt-3">
+								<div class="blue1">
+									<img src="src/img/pontos_layout.png" class="rowpontos">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row mt-5 justify-content-end me-2">
+
+							<div class="col-3">
+								<div class="pink1">
+									<img src="src/img/pontos_layout.png" class="rowbotao">
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+				<!-- Game -->
+
+				<div class="col-6">
+					<div class="red1 rowmain">
+
+						<table>
+							<tbody>
+								<tr>
+									<td>a1
+									<td>a2
+									<td>a3
+									<td>a4
+									<td>a5
+									<td>a6
+									<td>a7
+								</tr>
+								<tr>
+									<td>b1
+									<td>b2
+									<td>b3
+									<td>b4
+									<td>b5
+									<td>b6
+									<td>b7
+								</tr>
+								<tr>
+									<td>c1
+									<td>c2
+									<td>c3
+									<td>c4
+									<td>c5
+									<td>c6
+									<td>c7
+								</tr>
+								<tr>
+									<td>d1
+									<td>d2
+									<td>d3
+									<td>d4
+									<td>d5
+									<td>d6
+									<td>d7
+								</tr>
+								<tr>
+									<td>e1
+									<td>e2
+									<td>e3
+									<td>e4
+									<td>e5
+									<td>e6
+									<td>e7
+								</tr>
+								<tr>
+									<td>f1
+									<td>f2
+									<td>f3
+									<td>f4
+									<td>f5
+									<td>f6
+									<td>f7
+								</tr>
+							</tbody>
+						</table>
+
+					</div>
+				</div>
+
+				<!-- Área de Player 2 -->
+
+				<div class="col-3">
+					<div class="red1 rowmain">
+
+						<div class="row justify-content-between">
+
+							<div class="col-7 offset-2 mt-4">
+								<div class="blue1">
+									<p>Jogador 1
+									</p>
+								</div>
+							</div>
+
+							<div class="w-100">
+							</div>
+
+							<div class="col-5 offset-3 mt-5">
+								<div class="blue1">
+									<img src="src/img/player_layout.png" class="rowplayer">
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-3 mt-5">
+								<div class="pink1">
+									<img src="src/img/pontos_layout.png" class="rowpontos">
+								</div>
+							</div>
+
+							<div class="col-4 mt-5">
+								<div class="blue1">
+									<p>Pontos
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-3 mt-2">
+								<div class="blue1">
+									<img src="src/img/pontos_layout.png" class="rowpontos">
+								</div>
+							</div>
+
+							<div class="col-4 mt-2">
+								<div class="blue1">
+									<p>Vitórias
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-3 mt-3">
+								<div class="blue1">
+									<img src="src/img/pontos_layout.png" class="rowpontos">
+								</div>
+							</div>
+
+							<div class="col-4 mt-3">
+								<div class="blue1">
+									<p>Derrotas
+									</p>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row mt-5 justify-content-start ms-2">
+							<div class="col-3">
+								<div class="pink1">
+									<img src="src/img/pontos_layout.png" class="rowbotao">
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</main> <br/>
+
+		<footer id="footer">
+
+			<div class="row">
+
+				<div class="col">
+					<div class="rowfooter pink1">ed
+					</div>
+				</div>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+<!-- Preâmbulo 1a: Partidas Salvas -->
+
+
+
+	<div class="modal fade" id="modal_partidas" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<div class="conteiner-fluid">
+
+						<div class="row">
+
+							<div class="col-6">
+								<div class="blue1 row_lista_rodadas">
+
+									<div class="row justify-content-start gx-1">
+
+										<div class="col-2">
+											<div class="red1 mt-3 ms-2">
+												<img src="src/img/rodadas_layout.png" class="row_numero_rodadas">
+											</div>
+										</div>
+
+										<div class="col-3">
+											<div class="red1 rowrodadas mt-4">
+												<p>Rodadas
+												</p>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center">
+
+										<div class="col-11">
+											<div class="pink1 mt-4">
+												<select class="select2 conteiner" style="width: 100%" multiple>
+        											<option value="Teste1">teste1</option>
+        											<option value="Teste2">teste2</option>
+        											<option value="Teste3">teste3</option>
+        											<option value="Teste4">teste4</option>
+        											<option value="Teste5">teste5</option>
+    											</select>
+											</div>
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center">
+
+										<div class="col-11">
+											<div class="red1 mt-4">ed4
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div class="col-6">
+								<div class="pink1">
+
+									<div class="row">
+
+										<div class="col">
+											<div class="blue1 row_lista_rodadas">
+
+												<div class="row justify-content-center">
+
+													<div class="col-7">
+														<div class="pink1 mt-2">Player1
+														</div>
+													</div>
+
+												</div>
+
+												<div class="row justify-content-center">
+
+													<div class="col-7">
+														<div class="pink1 mt-4">
+															<img src="src/img/perfil2_layout.png" class="rowlogo2">
+														</div>
+													</div>
+
+												</div>
+												<div class="row justify-content-evenly">
+
+													<div class="col-5">
+														<div class="pink1 mt-5">Pontos
+														</div>
+													</div>
+
+													<div class="col-3">
+														<div class="pink1 mt-5 ps-1">
+															<img src="src/img/pontos_layout.png" class="rowbotao">
+														</div>
+													</div>
+
+												</div>
+
+												<div class="row justify-content-evenly">
+
+													<div class="col-5">
+														<div class="pink1 mt-5">Vitórias
+														</div>
+													</div>
+
+													<div class="col-3">
+														<div class="pink1 mt-5 ps-1">
+															<img src="src/img/pontos_layout.png" class="rowbotao">
+														</div>
+													</div>
+
+												</div>
+
+												<div class="row justify-content-evenly">
+
+													<div class="col-5">
+														<div class="pink1 mt-5">Derrotas
+														</div>
+													</div>
+
+													<div class="col-3">
+														<div class="pink1 mt-5 ps-1">
+															<img src="src/img/pontos_layout.png" class="rowbotao">
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+										<div class="col">
+											<div class="blue1">
+
+												<div class="row justify-content-center">
+
+													<div class="col-7">
+														<div class="pink1 mt-2">Player2
+														</div>
+													</div>
+
+												</div>
+
+												<div class="row justify-content-center">
+
+													<div class="col-7">
+														<div class="pink1 mt-4">
+															<img src="src/img/perfil2_layout.png" class="rowlogo2">
+														</div>
+													</div>
+
+												</div>
+												<div class="row justify-content-evenly">
+
+													<div class="col-5">
+														<div class="pink1 mt-5">Pontos
+														</div>
+													</div>
+
+													<div class="col-3">
+														<div class="pink1 mt-5 ps-1">
+															<img src="src/img/pontos_layout.png" class="rowbotao">
+														</div>
+													</div>
+
+												</div>
+
+												<div class="row justify-content-evenly">
+
+													<div class="col-5">
+														<div class="pink1 mt-5">Vitórias
+														</div>
+													</div>
+
+													<div class="col-3">
+														<div class="pink1 mt-5 ps-1">
+															<img src="src/img/pontos_layout.png" class="rowbotao">
+														</div>
+													</div>
+
+												</div>
+
+												<div class="row justify-content-evenly">
+
+													<div class="col-5">
+														<div class="pink1 mt-5">Derrotas
+														</div>
+													</div>
+
+													<div class="col-3">
+														<div class="pink1 mt-5 ps-1">
+															<img src="src/img/pontos_layout.png" class="rowbotao">
+														</div>
+													</div>
+
+												</div>
+
+											</div>
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center mt-5">
+
+							<div class="col-1">
+								<button type="button" class="btn btn-secondary" data-bs-target="#modal_modos" data-bs-toggle="modal" data-bs-dismiss="modal" id="fechar1">Fechar</button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Preâmbulo 1b: Modos de Jogo -->
+
+	<div class="modal fade" id="modal_modos" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<div class="conteiner-fluid">
+
+						<div class="row justify-content-evenly">
+
+							<div class="col-5">
+
+								<div class="red1 row_modo_player">
+
+									<div class="row justify-content-center pt-4">
+
+										<div class="col-4">
+
+											<div class="pink1">
+												<img src="src/img/modo_player.png" class="row_modo_numero ps-4">
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5">
+
+										<div class="col-4">
+
+											<div class="pink1 row_modo_texto">
+												<p>Jogador
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-5">
+
+								<div class="red1 row_modo_player">
+
+									<div class="row justify-content-center pt-4">
+
+										<div class="col-4">
+
+											<div class="pink1">
+												<img src="src/img/modo_player.png" class="row_modo_numero ps-4">
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5">
+
+										<div class="col-4">
+
+											<div class="pink1 row_modo_texto">
+												<p>Jogadores
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center mt-5">
+
+							<div class="col-1">
+								<button type="button" class="btn btn-secondary" data-bs-target="#modal_pvp" data-bs-toggle="modal" data-bs-dismiss="modal" id="fechar2">Fechar
+								</button>
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Preâmbulo 2a: Dados PvI-->
+
+	<div class="modal fade"  id="modal_pvp" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-body" >
+
+					<div class="container-fluid">
+
+						<div class="row justify-content-around">
+
+							<div class="col-5">
+
+								<div class="red1 row_pvi_quadro">
+
+									<div class="row justify-content-center">
+
+										<div class="col-5">
+
+											<div class="blue1 d-flex mt-4 row_pvi_perfil justify-content-center">
+												<img src="src/img/perfil_pvi_layout.png">
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5">
+
+										<div class="col-6">
+
+											<div class="pink1 row_pvi_texto d-flex justify-content-center">
+												<p>Nome do Jogador</p>
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5">
+
+										<div class="col-8">
+
+											<div class="pink1 d-flex justify-content-center row_pvi_entrada">
+												<input type="text" autocomplete="off" placeholder="Insira o seu nome aqui..">
+												</input>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-5">
+
+								<div class="red1 row_pvi_quadro">
+
+									<div class="row justify-content-center">
+
+										<div class="col-6 mt-4">
+
+											<div class="blue1 row_pvi_sony d-flex justify-content-center">
+												<img src="src/img/sony_layout.png">
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5 pt-4">
+
+										<div class="col-7">
+
+											<div class="blue1 row_pvi_entrada d-flex justify-content-center">
+												<p>Sony
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center mt-3">
+
+							<div class="col-5">
+
+								<div class="pink1 d-flex justify-content-center row_pvi_nomepartida">
+									<input type="text" autocomplete="off" placeholder="Insira o nome da partida aqui..">
+									</input>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center mt-5">
+
+							<div class="col-4">
+
+								<div class="blue1 d-flex justify-content-center">
+									<button type="button" class="btn btn-secondary row_pvi_botao" data-bs-target="#modal_pvi" data-bs-toggle="modal" data-bs-dismiss="modal" id="fechar3">Fechar
+									</button>
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Preâmbulo 2b: Dados PvP -->
+
+	<div class="modal fade" id="modal_pvi" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+		<div class="modal-dialog modal-fullscreen">
+			<div class="modal-content">
+				<div class="modal-body">
+
+					<div class="conteiner-fluid">
+
+						<div class="row justify-content-around">
+
+							<div class="col-5">
+
+								<div class="red1 row_players">
+
+									<div class="row justify-content-center">
+
+										<div class="col-6 justify-content-center">
+
+											<div class="blue1 row_player_nomepartida d-flex justify-content-center">
+												<img src="src/img/player_nome_partida.png">
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row mt-5 pt-4 justify-content-center">
+
+										<div class="col-4">
+
+											<div class="blue1 d-flex justify-content-center">
+												<p>Jogador 1
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5 pt-4">
+
+										<div class="col-6">
+
+											<div class="blue1 d-flex justify-content-center">
+												<input type="text" autocomplete="off" placeholder="Insira o seu nome aqui..">
+												</input>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+							<div class="col-5">
+
+								<div class="red1 row_players">
+
+									<div class="row justify-content-center">
+
+										<div class="col-6 justify-content-center">
+
+											<div class="blue1 row_player_nomepartida d-flex justify-content-center">
+												<img src="src/img/player_nome_partida.png">
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row mt-5 pt-4 justify-content-center">
+
+										<div class="col-4">
+
+											<div class="blue1 d-flex justify-content-center">
+												<p>Jogador 2
+												</p>
+											</div>
+
+										</div>
+
+									</div>
+
+									<div class="row justify-content-center mt-5 pt-4">
+
+										<div class="col-6">
+
+											<div class="blue1 d-flex justify-content-center">
+												<input type="text" autocomplete="off" placeholder="Insira o seu nome aqui..">
+												</input>
+											</div>
+
+										</div>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center mt-3">
+
+							<div class="col-5">
+
+								<div class="pink1 d-flex justify-content-center row_pvi_nomepartida">
+									<input type="text" autocomplete="off" placeholder="Insira o nome da partida aqui..">
+									</input>
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="row justify-content-center mt-5">
+
+							<div class="col-4">
+
+								<div class="blue1 d-flex justify-content-center">
+									<button type="button" class="btn btn-secondary row_pvi_botao" data-bs-target="#modal_pvi" data-bs-toggle="modal" data-bs-dismiss="modal" id="fechar3">Fechar
+									</button>
+								</div>
+
+							</div>
+
+						</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- jquery -->
+
+	<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript">
+	</script>
+
+<!-- select2 -->
+
+	<script src="node_modules/select2/dist/js/select2.min.js" type="text/javascript">
+	</script>
+
+	<script src="src/js/select2.js" type="text/javascript">
+	</script>
+
+<!-- Javascript do BS5 -->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
+	</script>
+
+<!-- Custom Javascript -->
+
+	<script src="src/js/prototypes.js" type="text/javascript">
+	</script>
+
+	<script src="src/js/modal.js" type="text/javascript">
+	</script>
+
+
 
 </body>
 </html>

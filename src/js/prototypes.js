@@ -1,16 +1,16 @@
 //Window
-window.on = function(events,func){
+window.onS = function(events,func){
 	events.split(' ').forEach(event => {
 		this.addEventListener(event,func)
 		});
 }
-window.$=function(e){return e.search("#")>-1?document.querySelector(e):document.querySelectorAll(e)}
+window.$S=function(e){return e.search("#")>-1?document.querySelector(e):document.querySelectorAll(e)}
 
 //Elements
-Element.prototype.on=function(events,func){
+Element.prototype.onS = function(events,func){
 	events.split(' ').forEach(event => {
 		this.addEventListener(event,func)
 		});
 }
-Element.prototype.$=function(e){return e.search("#")>-1?document.querySelector(e):document.querySelectorAll(e)}
+Element.prototype.$S=function(e){return e.search("#")>-1?document.querySelector(e):document.querySelectorAll(e)}
 Element.prototype.toggle=function(){this.classList.toggle("close")}
