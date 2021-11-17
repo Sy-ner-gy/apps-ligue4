@@ -1,6 +1,6 @@
 {
 	"name": "ligue4",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Simple game of the classic Ligue4",
 	"main": "index.js",
 	"directories": {

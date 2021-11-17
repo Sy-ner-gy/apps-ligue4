@@ -20,9 +20,6 @@ body {
 
 .rowlogo {
 	height:27.2581vh;
-	padding-left: 1.20vw;
-	padding-top: 2.33085vh;
-	object-fit: cover;
 }
 
 .rowmain {
@@ -132,4 +129,8 @@ body {
 .row_pvi_botao {
 	height: 9.6774vh;
 
+}
+
+.layout_pontos {
+	margin-top: 2.25rem;
 }
